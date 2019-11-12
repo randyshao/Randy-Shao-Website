@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: Inter, Roboto, sans-serif;
+    font-style: normal;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 15px;
+}
+
+.home-header {
+    background-image: url("img/homepage_wide.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.home-title {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 30px;
+}
+
+.btn {
+    margin-top: 30px;
+}
