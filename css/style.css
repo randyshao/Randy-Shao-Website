@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.05rem;
+    font-weight: 550;
+    margin: 15px 0;
+}
+
+a {
+    color: lightskyblue;
+}
+
+.home-header {
+    background-image: url("../img/homepage_wide.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.home-title {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 30px;
+}
+
+.nav-dark {
+    background-color: #000000;
+}
+
+.nav-dark a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=fff');
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.main-content {
+    padding: 40px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.content-title {
+    font-size: 2rem;
+}
+
+.img-container img {
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.footer {
+    padding: 40px;
+}
+
+.footer-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
