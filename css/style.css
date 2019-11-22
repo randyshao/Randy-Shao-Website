@@ -1,3 +1,9 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +11,7 @@
 body, html {
     margin: 0;
     height: 100%;
-    font-family: 'Red Hat Text', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
 }
 
@@ -16,13 +22,22 @@ h1 {
 }
 
 h2 {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 550;
     margin: 15px 0;
 }
 
 a {
-    color: lightskyblue;
+    color: rgb(35, 149, 255);
+    transition: .3s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 525;
 }
 
 .home-header {
@@ -62,8 +77,13 @@ a {
 
 .main-content {
     padding: 40px;
-    max-width: 450px;
+    max-width: 500px;
     margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+.dash {
+    line-height: 50%;
 }
 
 .content-title {
@@ -91,3 +111,36 @@ a {
     margin: 5px 0;
 }
 
+@media (min-width: 768px) {
+    
+    .main-content {
+        max-width: 1080px;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .about-section {
+        margin: 40px 0;
+    }
+
+    .img-container {
+        width: 50%;
+        max-width: 375px;
+        position: relative;
+    }
+
+    .text-container {
+        width: 50%;
+        position: relative;
+    }
+
+    .footer-nav {
+        float: right;
+    }
+
+    .nav-items {
+        float: left;
+        padding: 0 15px;
+    }
+
+}

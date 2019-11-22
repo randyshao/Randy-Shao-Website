@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -23,65 +23,79 @@
             </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav mr-4">
-                <a class="nav-item nav-link" href="#">About<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Collections</a>
-                <a class="nav-item nav-link" href="#">Projects</a>
+                <a class="nav-item nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="collections.html">Collections</a>
+                <a class="nav-item nav-link" href="projects.html">Projects</a>
                 <a class="nav-item nav-link" href="#">Contact</a>
             </div>
         </div>
     </nav>
     <!-- /navbar -->
     <!-- main-content -->
-    <div class="main-content mt-4">
-        <div class="img-container mt-4">
-            <img src="img/portrait_cropped.png" alt="Randy Shao">
+    <main class="main-content mt-4 clearfix">
+        <!-- About Me -->
+        <div class="about-section clearfix">
+            <div class="img-container mt-4 float-right">
+                <img class="portrait-img" src="img/portrait_cropped.png" alt="Randy Shao">
+            </div>
+            <div class="text-container mt-4 float-left">
+                <h1 class="content-title">About Me.</h1>
+                <h1 class="dash">-</h1>
+                <p>Hi! My name is Randy, and it’s a pleasure to meet you. I’m currently a second-year 
+                    computer science student at Queen’s University. I love all things tech and business,
+                    and am most interested in product management, UX/UI design, front-end development,
+                    and the startup scene. I’m currently seeking summer 2020 internships in product 
+                    management and software development. If you like what you see, <a href="contact.html">
+                    please feel free reach out!</a>
+                </p>
+            </div>
         </div>
-        <div class="mt-4">
-            <h1 class="content-title">About Me.</h1>
-            <p>Hi! My name is Randy, and it’s a pleasure to meet you. I’m currently a second-year 
-                computer science student at Queen’s University. I love all things tech and business,
-                and am most interested in product management, UX/UI Design, front-end development,
-                and the startup scene. I’m currently seeking summer 2020 internships in product 
-                management and software development. If you like what you see, please reach out!
-            </p>
-            <p>I’m also an avid foodie! I love cooking, trying new foods, and experimenting in the 
-                kitchen. Let’s get lunch sometime.
-            </p>
+        <!-- /About Me -->
+        <!-- My Collections -->
+        <div class="about-section clearfix">
+            <div class="img-container mt-4 float-left">
+                <img src="img/dundas_peak.jpg" alt="Randy Shao">
+            </div>
+            <div class="text-container mt-4 float-right">
+                <h1 class="content-title">Creative.</h1>
+                <h1 class="dash">-</h1>
+                <p>Outside of school, I have a passion for photography and videography. I love travelling 
+                    and documenting my experiences along the way through creative storytelling. What 
+                    photography has done for me has let me meet some of the most amazing, passionate, and 
+                    genuine people in my life. <a href="contact.html">Let’s go for a shoot!</a>
+                </p>
+                <a href="collections.html"><button type="button" class="btn btn-outline-dark"><strong>My Collections</strong></button></a>
+            </div>
         </div>
-        <div class="img-container mt-4">
-            <img src="img/dundas_peak.jpg" alt="Randy Shao">
+        <!-- /My Collections -->
+        <!-- My Projects -->
+        <div class="about-section clearfix">
+            <div class="img-container mt-4 float-right">
+                    <img src="img/tpp.jpg" alt="Randy Shao">
+            </div>
+            <div class="text-container mt-4 float-left">
+                <h1 class="content-title">Code.</h1>
+                <h1 class="dash">-</h1>
+                <p>As a computer science student, I'm always looking at new opportunities for growth. 
+                    Here's what I've been working on the past little while. <a href="contact.html">Let’s build something together!</a>
+                </p>
+                <a href="projects.html"><button type="button" class="btn btn-outline-dark"><strong>My Projects</strong></button></a>
+            </div>
         </div>
-        <div class="mt-4">
-            <h1 class="content-title">Creative.</h1>
-            <p>Outside of school, I have a passion for photography and videography. I love travelling 
-                and documenting my experiences along the way through creative storytelling. What 
-                photography has done for me has let me meet some of the most amazing, passionate, and 
-                genuine people in my life. <a>Let’s go for a shoot!</a>
-            </p>
-            <a href="#"><button type="button" class="btn btn-outline-dark">My Collections</button></a>
-        </div>
-        <div class="img-container mt-4">
-                <img src="img/tpp.jpg" alt="Randy Shao">
-        </div>
-        <div class="mt-4">
-            <h1 class="content-title">Projects.</h1>
-            <p>Outside of school, I have a passion for photography and videography. I love travelling 
-                and documenting my experiences along the way through creative storytelling. What 
-                photography has done for me has let me meet some of the most amazing, passionate, and 
-                genuine people in my life. Let’s go for a shoot!
-            </p>
-            <a href="#"><button type="button" class="btn btn-outline-dark">My Projects</button></a>
-        </div>
-    </div>
-    <div class="footer nav-dark">
-        <h1 class="content-title text-light">Let's Connect.</h1>
-        <ul class="footer-nav">
-            <li class="text-light"><a href="#">Contact</a></li>
-            <li class="text-light"><a href="#">Instagram</a></li>
-            <li class="text-light"><a href="#">Linkedin</a></li>
-            <li class="text-light"><a href="#">Github</a></li>
-        </ul> 
-    </div>
-    
+        <!-- /My Projects -->
+    </main>
+    <!-- /main-content -->
+    <footer class="footer nav-dark clearfix">
+        <div class="footer-container inline">
+            <h1 class="content-title text-light inline">Let's Connect.</h1>
+            <h1 class="text-light dash inline">-</h1>
+            <ul class="footer-nav inline">
+                <li class="nav-items text-light"><a href="#">Contact</a></li>
+                <li class="nav-items text-light"><a href="https://www.instagram.com/shaozr/">Instagram</a></li>
+                <li class="nav-items text-light"><a href="https://www.linkedin.com/in/randyshao/">Linkedin</a></li>
+                <li class="nav-items text-light"><a href="https://github.com/randyshao">Github</a></li>
+            </ul>
+        </div> 
+    </footer>
 </body>
 </html>
