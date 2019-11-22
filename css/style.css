@@ -60,9 +60,14 @@ br {
     background-color: #000000;
 }
 
-.nav-dark a {
+.nav-color {
     color: #ffffff;
     font-weight: 600;
+}
+
+.nav-color:hover {
+    color: silver;
+    transition: .3s;
 }
 
 .navbar-toggler-icon {
@@ -71,6 +76,7 @@ br {
 
 .nav-item {
     margin: 0 20px;
+    font-size: 0.85rem;
 }
 
 .link {
@@ -104,7 +110,7 @@ br {
 }
 
 .footer {
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
 }
 
 .footer-nav {
@@ -115,6 +121,18 @@ br {
 .footer-nav li {
     font-weight: bold;
     margin: 5px 0;
+}
+
+.animate {
+    transition: 0.2s;
+}
+
+.animate:hover {
+    transform: scale(0.95);
+}
+
+.btn {
+    cursor: pointer;
 }
 
 /* --- CONTACT PAGE --- */
@@ -160,7 +178,7 @@ br {
         display: inline-block;
     }
 
-    .nav-items {
+    .nav-item {
         float: left;
         padding: 0 15px;
     }
