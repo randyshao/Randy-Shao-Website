@@ -16,17 +16,17 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg nav-dark fixed-top">
+    <nav class="navbar navbar-expand-md nav-dark fixed-top">
         <a class="navbar-brand ml-4" href="index.html">R.</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav mr-4">
-                <a class="nav-item nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="collections.html">Collections</a>
-                <a class="nav-item nav-link" href="projects.html">Projects</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
+                <a class="nav-item nav-link" href="about.html">ABOUT<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="collections.html">COLLECTIONS</a>
+                <a class="nav-item nav-link" href="projects.html">PROJECTS</a>
+                <a class="nav-item nav-link" href="contact.html">CONTACT</a>
             </div>
         </div>
     </nav>
@@ -35,17 +35,17 @@
     <main class="main-content mt-4 clearfix">
         <!-- About Me -->
         <div class="about-section clearfix">
-            <div class="img-container mt-4 float-right">
+            <div class="img-container mt-4 float-left order-2">
                 <img class="portrait-img" src="img/portrait_cropped.png" alt="Randy Shao">
             </div>
-            <div class="text-container mt-4 float-left">
+            <div class="text-container mt-4 float-left order-1">
                 <h1 class="content-title">About Me.</h1>
                 <h1 class="dash">-</h1>
                 <p>Hi! My name is Randy, and it’s a pleasure to meet you. I’m currently a second-year 
                     computer science student at Queen’s University. I love all things tech and business,
                     and am most interested in product management, UX/UI design, front-end development,
                     and the startup scene. I’m currently seeking summer 2020 internships in product 
-                    management and software development. If you like what you see, <a href="contact.html">
+                    management and software development. If you like what you see, <a class="link" href="contact.html">
                     please feel free reach out!</a>
                 </p>
             </div>
@@ -53,16 +53,16 @@
         <!-- /About Me -->
         <!-- My Collections -->
         <div class="about-section clearfix">
-            <div class="img-container mt-4 float-left">
+            <div class="img-container mt-4 float-left order-1">
                 <img src="img/dundas_peak.jpg" alt="Randy Shao">
             </div>
-            <div class="text-container mt-4 float-right">
-                <h1 class="content-title">Creative.</h1>
+            <div class="text-container mt-4 float-right order-2">
+                <h1 class="content-title">Create.</h1>
                 <h1 class="dash">-</h1>
                 <p>Outside of school, I have a passion for photography and videography. I love travelling 
                     and documenting my experiences along the way through creative storytelling. What 
                     photography has done for me has let me meet some of the most amazing, passionate, and 
-                    genuine people in my life. <a href="contact.html">Let’s go for a shoot!</a>
+                    genuine people in my life. <a class="link" href="contact.html">Let’s go for a shoot!</a>
                 </p>
                 <a href="collections.html"><button type="button" class="btn btn-outline-dark"><strong>My Collections</strong></button></a>
             </div>
@@ -70,14 +70,14 @@
         <!-- /My Collections -->
         <!-- My Projects -->
         <div class="about-section clearfix">
-            <div class="img-container mt-4 float-right">
+            <div class="img-container mt-4 float-right order-2">
                     <img src="img/tpp.jpg" alt="Randy Shao">
             </div>
-            <div class="text-container mt-4 float-left">
-                <h1 class="content-title">Code.</h1>
+            <div class="text-container mt-4 float-left order-1">
+                <h1 class="content-title">Build.</h1>
                 <h1 class="dash">-</h1>
                 <p>As a computer science student, I'm always looking at new opportunities for growth. 
-                    Here's what I've been working on the past little while. <a href="contact.html">Let’s build something together!</a>
+                    Here's what I've been working on the past little while. <a class="link" href="contact.html">Let’s build something together!</a>
                 </p>
                 <a href="projects.html"><button type="button" class="btn btn-outline-dark"><strong>My Projects</strong></button></a>
             </div>
@@ -85,17 +85,21 @@
         <!-- /My Projects -->
     </main>
     <!-- /main-content -->
+    <!-- footer -->
     <footer class="footer nav-dark clearfix">
-        <div class="footer-container inline">
-            <h1 class="content-title text-light inline">Let's Connect.</h1>
-            <h1 class="text-light dash inline">-</h1>
+        <div class="footer-container">
+            <div class="footer-text">
+                <h1 class="footer-title text-light">Let's Connect.</h1>
+                <h1 class="text-light dash">-</h1>
+            </div>
             <ul class="footer-nav inline">
-                <li class="nav-items text-light"><a href="#">Contact</a></li>
+                <li class="nav-items text-light"><a href="contact.html">Contact</a></li>
                 <li class="nav-items text-light"><a href="https://www.instagram.com/shaozr/">Instagram</a></li>
                 <li class="nav-items text-light"><a href="https://www.linkedin.com/in/randyshao/">Linkedin</a></li>
                 <li class="nav-items text-light"><a href="https://github.com/randyshao">Github</a></li>
             </ul>
         </div> 
     </footer>
+    <!-- footer -->
 </body>
 </html>
