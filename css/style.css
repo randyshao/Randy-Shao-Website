@@ -131,8 +131,14 @@ br {
     transform: scale(0.95);
 }
 
-.btn {
+.btn,
+.navbar-toggler {
     cursor: pointer;
+}
+
+.order-1,
+.order-2 {
+    display: block;
 }
 
 /* --- CONTACT PAGE --- */
@@ -182,7 +188,6 @@ br {
         float: left;
         padding: 0 15px;
     }
-
 }
 
 @media (min-width: 768px) {
@@ -201,14 +206,14 @@ br {
 
     .img-container {
         width: 50%;
-        margin: 0 20px;
+        margin: 0 30px;
         max-width: 375px;
         position: relative;
     }
 
     .text-container {
         width: 50%;
-        margin: 0 20px;
+        margin: 0 30px;
         position: relative;
     }
 
@@ -228,7 +233,6 @@ br {
     .form-control {
         max-width: 500px;
     }
-
 }
 
 @media (min-width: 1920px) {
@@ -251,7 +255,7 @@ br {
 
     .img-container {
         width: 50%;
-        max-width: 600px;
+        max-width: 500px;
         position: relative;
         margin: 0 40px;
     }
