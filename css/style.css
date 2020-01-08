@@ -34,7 +34,7 @@ br {
 }
 
 .home-header {
-    background-image: url("../img/homepage_wide.jpg");
+    background-image: url("../images/homepage_wide.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,6 +88,15 @@ br {
 #text-generator {
     font-weight: 550;
 }
+
+.socials {
+    max-width: 30px;
+}
+
+.socials:hover {
+    fill: white;
+}
+
 
 /* --- ABOUT PAGE --- */
 
@@ -146,10 +155,48 @@ br {
     display: block;
 }
 
+/* --- COLLECTIONS PAGE --- */
+
+.collection-header {
+    background-image: url("../images/collections_background.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.gallery {
+    margin: 75px 50px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 230px;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* --- PROJECTS PAGE --- */
+
+.projects-header {
+    background-image: url("../images/projects_background.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-top: 100px;
+}
+
+
 /* --- CONTACT PAGE --- */
 
 .contact-header {
-    background-image: url("../img/contact_background.JPG");
+    background-image: url("../images/contact_background.JPG");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
