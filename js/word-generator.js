@@ -8,7 +8,7 @@ let word;
 let nextWord;
 
 let changeLetterTime = 50;
-let displayWordTime = 2000;
+let displayWordTime = 2500;
 
 updatePage();
 setTimeout(alterDisplayWord, displayWordTime);
