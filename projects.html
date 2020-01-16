@@ -32,11 +32,37 @@
         </div>
     </nav>
     <!-- /navbar -->
-    <main class="projects-header">
+    <div class="projects-header">
         <div class="home-title text-white">
-            <h1>Coming Soon! :)</h1>
+            <h1>Building the Future.</h1>
+            <span>Photo by <a class="link" href="https://unsplash.com/@blakeconnally?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge">Blake Connally</a></span>
         </div>
-    </main>
+    </div>
+    <!-- projects-->
+    <div class="projects clearfix">
+        <div class="project-section clearfix">
+            <div class="project-container mt-4 float-left order-1">
+                <a href="projects/game-show-app/index.html">
+                    <img src="images/word_guesser_project.png" class="project-img">
+                    <div class="overlay">
+                        <div class="project-text">
+                            <h3>Word Guessing Game</h3>
+                            <p>A simple game based off the show "Wheel of Fortune", using JavaScript.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project-container mt-4 float-left order-2">
+                <img src="images/tpp.jpg" class="project-img">
+                    <div class="overlay">
+                        <div class="project-text">
+                        <h3>The Positivity Project</h3>
+                        <p>Developing a Shopify website for a student-run social venture. (Coming soon)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer -->
     <footer class="footer nav-dark clearfix">
         <div class="footer-container">
@@ -57,6 +83,22 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-</body>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+
+        sr.reveal('.order-1', {
+            duration: 1500,
+            origin: 'left',
+            distance: '50px'
+        })
+
+        sr.reveal('.order-2', {
+            duration: 1500,
+            origin: 'right',
+            distance: '50px'
+        })
+
+    </script>
 </body>
 </html>

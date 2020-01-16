@@ -175,6 +175,7 @@ br {
     width: 230px;
     padding: 5px;
     transition: 0.2s;
+    border-radius: 5%;
 }
 
 .gallery img:hover {
@@ -189,8 +190,51 @@ br {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    padding-top: 100px;
 }
+
+.projects {
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 0.8rem;
+}
+
+.project-container {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.2s;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    transition: 0.2s;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    width: 80%;
+}
+
+.project-container:hover .project-img {
+    opacity: 0.15;
+    transform: scale(1.05);
+}
+
+.project-container:hover .overlay {
+    opacity: 1;
+}
+
 
 
 /* --- CONTACT PAGE --- */
@@ -211,43 +255,6 @@ br {
         width: 90%;
         font-size: 1rem;
         line-height: 1.7;
-    }
-
-    .about-section {
-        margin: 40px 0;
-    }
-
-    .img-container {
-        width: 50%;
-        max-width: 375px;
-        position: relative;
-    }
-
-    .text-container {
-        width: 50%;
-        position: relative;
-    }
-
-    .footer-nav {
-        float: right;
-    }
-
-    .footer-text {
-        display: inline-block;
-    }
-
-    .nav-item {
-        float: left;
-        padding: 0 15px;
-    }
-}
-
-@media (min-width: 768px) {
-    
-    .main-content {
-        max-width: 980px;
-        width: 90%;
-        font-size: 1rem;
     }
 
     .about-section {
@@ -277,7 +284,7 @@ br {
         display: inline-block;
     }
 
-    .nav-items {
+    .nav-item {
         float: left;
         padding: 0 15px;
     }
@@ -285,6 +292,21 @@ br {
     .form-control {
         max-width: 500px;
     }
+
+    .projects {
+        max-width: 1080px;
+        align-items: center;
+    }
+
+    .project-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .project-container {
+        margin: 0 40px;
+    }
+    
 }
 
 @media (min-width: 1920px) {
@@ -314,6 +336,11 @@ br {
 
     .break {
         margin-bottom: 40px;
+    }
+
+    .projects {
+        max-width: 1600px;
+        font-size: 1rem;
     }
 
 }
