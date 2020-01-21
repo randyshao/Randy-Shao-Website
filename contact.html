@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon_io/favicon.ico"/>
-    
+    <script src="form/form.js"></script>
+
     <title>Randy Shao</title>
     
 </head>
@@ -51,15 +52,12 @@
                     doing it with people I love the most.</p>
                 <p class="break">I’m always down to meet new people and build genuine relationships. If 
                     you ever want to go for coffee, or if you have any other inquiries, feel free to reach out with the form below!</p>
-                <form action="mailto:shao.randy@gmail.com" method="POST">
+                <form id="reused_form" name="contact-form" method="POST">
                     <div class="form-group">
                         <input class="form-control" name="name" placeholder="Full Name" type="text">
                     </div>
                     <div class="form-group">
                         <input class="form-control" name="email" placeholder="Email Address" type="email">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" name="subject" placeholder="Subject" type="text">
                     </div>
                     <div class="form-group">
                         <textarea class="form-control" name="message" placeholder="Message"></textarea>
@@ -101,6 +99,69 @@
             origin: 'right',
             distance: '100px'
         })
+
+        $(function()
+{
+    function after_form_submitted(data)
+    {
+        if(data.result == 'success')
+        {
+            $('form#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+
+        }//else
+    }
+
+	$('#reused_form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' );
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Sending ...');
+        });
+
+
+                    $.ajax({
+                type: "POST",
+                url: 'handler.php',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json'
+            });
+
+      });
+});
     </script>
 </body>
 </html>
