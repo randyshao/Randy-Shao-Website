@@ -60,6 +60,10 @@ br {
     background-color: #000000;
 }
 
+.navbar-dark.active {
+    color: #ffffff;
+}
+
 .nav-color {
     color: #ffffff;
     font-weight: 600;
@@ -68,10 +72,6 @@ br {
 .nav-color:hover {
     color: silver;
     transition: .3s;
-}
-
-.navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=fff');
 }
 
 .nav-item {
@@ -96,8 +96,6 @@ br {
 .socials:hover {
     fill: white;
 }
-
-
 /* --- ABOUT PAGE --- */
 
 .main-content {
