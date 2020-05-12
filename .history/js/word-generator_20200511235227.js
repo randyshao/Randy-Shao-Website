@@ -1,4 +1,4 @@
-let wordArray = ["Sunset Chaser", "Photographer", "Filmmaker", "Aspiring Product Manager", "Avid Foodie", "Tech Enthusiast", "Travel Junkie", "Maple Leafs Fan", "Adventure Seeker"];
+let wordArray = ["Sunset Chaser", "Photographer", "Filmmaker", "Aspiring Product Manager", "Avid Foodie", "Tech Enthusiast", "Maple Leafs Fan", "Adventure Seeker"];
 let wordIncrement = -1;
 let stateChange = 0;
 
